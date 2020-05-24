@@ -76,7 +76,6 @@
 			$email = Db::clearing($patch_data['email']);
 			$task = Db::clearing($patch_data['task']);
 			$status = Db::clearing($patch_data['status']);
-			//print_r($method); die();
 			// запрос на обновление данных
 			$query = "UPDATE `tasks` SET `name`='$name',`email`='$email',`task`='$task',`status`='$status' WHERE `id` = '$id'";
 			$result = Db::dbQuery($query);
