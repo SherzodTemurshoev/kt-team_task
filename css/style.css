@@ -1,0 +1,259 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+//	background: url(../images/bg.png) repeat;
+	background: url(../images/background.png) repeat;
+	font-family: Helvetica, Arial, sans-serif;
+}
+/*шапка сайта*/
+#header, #footer {
+	background: rgba(0, 0, 0, .3);
+}
+#header{
+    padding: 10px;
+}
+#header #reg_auth_block {
+	display: flex;
+	padding: 0;
+	justify-content: center;
+}
+#header #reg_auth_block ul li {
+	list-style-type: none;
+}
+#header #reg_auth_block a{
+	margin-right: 15px;
+	border: 1px solid silver;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #f3f3f3;
+	text-decoration: none;
+}
+#header #reg_auth_block a:hover {
+	background-color: #e5eae8;
+}
+#header #reg_auth_block a img {
+	margin-right: 7px;
+}
+#auth_block, #logout_block {
+	margin-top: 10px;
+}
+
+/*Основной контент сайта*/
+#content, .form {
+	width: 600px;
+	border: 1px solid silver;
+	margin: 20px auto;
+	background-color: #f3f3f3;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5px;
+}
+.form {
+	text-decoration: uppercase;
+	padding-bottom: 5px;
+}
+#content h2 {
+	margin-bottom: 10px;  
+	font-size: 1.2em;
+	color: #6b99ad;
+}
+
+#content #btn {
+	width: 30%;
+	cursor: pointer;
+}
+.group {
+	margin: 10px;
+	padding: 5px;
+}
+.group label {
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+.group input, #content input {
+	height: 40px;
+	width: 400px;
+	margin: 10px 0;
+	padding-left: 15px;
+	font-size: 16px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.90);
+}
+.group #file_input {
+	padding-top: 10px;
+}
+.group input:focus {
+	border: 2px solid #6c00ff;
+//	transform: translateX(10px);
+	width: 390px;
+}
+.group input#btn {
+	width: 200px;
+	padding: 0;
+	cursor: pointer;
+	background-color: #5200a5;
+	color: #fff;
+}
+.group input#btn:hover {
+	opacity: .80;
+	font-weight: bold;
+	transform: scale(1.1);
+}
+.table {
+	width: 100%;
+	margin: 10px auto;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+
+#content .table input {
+	width: 100%;
+	cursor: pointer;
+}
+
+.table td,
+.table th {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #3e4851;
+	border: 1px solid black;
+}
+.table td {
+	padding: 5px;
+	color: #000;
+}
+.table th {
+	padding: 10px;
+}
+.error {
+	color: white;
+	display: none;
+	width: 70%;
+	margin: 0 auto 10px;
+	background: red;
+}
+.message_error, .success_message {
+	color: white;
+	display: block;
+	background-color: red;
+	border-radius: 3px;
+	padding: 3px;
+	width: 600px;
+	margin: 10px auto;
+	text-align: center;
+}
+.block_for_messages{
+    text-align: center;
+    margin: 10px auto 0;
+}
+.success_message {
+	background-color: green;
+}
+.active {
+	display: block;
+}
+.success {
+	color: green;
+	margin-left: 5px;
+	display: inline;
+}
+.pagination a {
+    padding: 5px;
+    border: 1px solid white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    background: rgba(0,0,0,0.3);
+}
+.pagination {
+	margin: 5px;
+}
+
+#btn_dis {
+	color: black;
+	cursor: auto !important;
+}
+.table tr:first-child input{
+	margin-bottom: 0 !important;
+	border-radius: 0 !important;
+}
+.admin {
+	margin: 10px;
+	text-align: right;
+}
+.admin a {
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	background: rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+#content .group select {
+    height: 40px;
+    width: 420px;
+    margin: 10px 0;
+    padding-left: 15px;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.90);
+}
+#th_input input {
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+}
+.hidden_form {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.close {
+	cursor: pointer;
+	margin-left: 90%;
+	font-size: 22px;
+	color: #000;
+}
+#btn_admin {
+	width: 30%;
+	cursor: pointer;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.90);
+}
+
+#sorting_list {
+    display: none;
+    width: 200px;
+    background: white;
+    margin: auto;
+    list-style-type: none;
+    text-align: left;
+    padding: 5px;
+}
+#select_sort {
+    cursor: pointer;
+	text-decoration: underline;
+	color: blue;
+}
+#sorting_list a {
+    text-decoration: none;
+}
+#sorting_list a:hover {
+    text-decoration: underline;
+}
+/*подвал сайта*/
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 5px 15px ;
+}

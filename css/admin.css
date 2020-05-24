@@ -1,0 +1,47 @@
+table {
+    font-family: serif;
+    font-size: 16px;
+    background-color: #ece9e0;
+    border-radius: 5px;
+    margin: auto;
+}
+table, tr, td {
+    border-spacing: 10px 10px;
+}
+table tr:nth-child(2n+1) {
+    background-color: #ffb3b3;
+}
+table tr:nth-child(2n) {
+    background-color: #00ffff;
+}
+table th {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #0080ff;
+}
+table tr td {
+    padding: 5px;
+}
+table a {
+    text-decoration: none;
+}
+table a:hover {
+    border-bottom: 2px solid #330000;
+}
+#back_btn_div {
+    margin: 15px;
+    text-align: center;
+}
+#back_btn {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    font-style: italic;
+    background: #ff8080;
+    font-weight: bold;
+    color: #1a0000;
+}
+#back_btn:hover {
+    text-decoration: underline;
+    padding: 7px;
+}
